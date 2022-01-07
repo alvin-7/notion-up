@@ -122,4 +122,7 @@ class NotionUp:
 
     @staticmethod
     def copy2Onedrive():
-        shutil.copytree(Config.output(), os.environ['HOME'] + "/OneDrive/Notion/")
+        dst = os.environ['HOME'] + "/OneDrive/Notion/bak"
+        if os.path.exists(dst):
+            shutil.rmtree(dst)
+        shutil.copytree(Config.output(), dst) 
