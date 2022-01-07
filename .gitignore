@@ -2,3 +2,4 @@ build
 venv
 .idea
 *.pyc
+.config_file.json
