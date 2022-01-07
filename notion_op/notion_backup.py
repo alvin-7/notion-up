@@ -2,6 +2,7 @@ import json
 import shutil
 import time
 import zipfile
+import os
 from pathlib import Path
 from typing import List
 
@@ -119,3 +120,6 @@ class NotionUp:
             print('unzip exported zip: {}'.format(file))
             NotionUp.unzipFile(file)
 
+    @staticmethod
+    def copy2Onedrive():
+        shutil.copytree(Config.output(), os.environ['HOME'] + "/OneDrive/Notion/")
