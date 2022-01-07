@@ -27,11 +27,9 @@ def start():
 
     if Config.action() in ['all', 'unzip']:
         # unzip
-        if Config.unzip():
-            NotionUp.unzip()
-        NotionUp.copy2Onedrive()
+        NotionUp.unzip()
         # archive files
-
+    NotionUp.copy2Onedrive()
 
 # Cli cmd example:
 # python main.py \

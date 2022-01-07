@@ -8,7 +8,6 @@ from utils.utils import Utils
 DEFAULT_ARGS = {
     'config_file': None,
     'debuggable': True,
-    'unzip': True,  # unzip the bak file?
     'workspace': Utils.get_workspace(),
     'output': os.path.join(Utils.get_workspace(), "build"),
     'notion_api': 'https://www.notion.so/api/v3',
