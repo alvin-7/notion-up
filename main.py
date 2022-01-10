@@ -29,7 +29,7 @@ def start():
         # unzip
         NotionUp.unzip()
         # archive files
-    NotionUp.copy2Onedrive()
+    # NotionUp.copy2Onedrive()
 
 # Cli cmd example:
 # python main.py \
